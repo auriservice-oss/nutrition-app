@@ -1,0 +1,13 @@
+{
+  "name": "nutrition-app",
+  "version": "1.0.0",
+  "description": "Beginner-friendly nutrition consulting web app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

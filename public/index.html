@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrition Consulting</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nutrition Consulting Dashboard</h1>
+      <p>Beginner-friendly tool for managing customers and nutrition insights.</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Create Customer</h2>
+        <form id="customer-form">
+          <label>
+            Name
+            <input type="text" id="customer-name" required />
+          </label>
+          <label>
+            Email (optional)
+            <input type="email" id="customer-email" />
+          </label>
+          <button type="submit">Add Customer</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Customer Profile</h2>
+        <label>
+          Select Customer
+          <select id="customer-select"></select>
+        </label>
+        <div id="customer-details" class="details"></div>
+      </section>
+
+      <section class="card">
+        <h2>Calculate BMI</h2>
+        <form id="bmi-form">
+          <label>
+            Height (cm)
+            <input type="number" id="height" min="50" required />
+          </label>
+          <label>
+            Weight (kg)
+            <input type="number" id="weight" min="10" required />
+          </label>
+          <button type="submit">Save BMI Entry</button>
+        </form>
+        <div id="bmi-history"></div>
+      </section>
+
+      <section class="card">
+        <h2>Notes & Recommendations</h2>
+        <form id="notes-form">
+          <label>
+            Note
+            <textarea id="note" rows="3"></textarea>
+          </label>
+          <label>
+            Recommendation
+            <textarea id="recommendation" rows="3"></textarea>
+          </label>
+          <button type="submit">Save Note</button>
+        </form>
+        <div id="notes-history"></div>
+      </section>
+
+      <section class="card">
+        <h2>Food vs Product Comparison</h2>
+        <div class="two-column">
+          <label>
+            Food
+            <select id="food-select"></select>
+          </label>
+          <label>
+            Product
+            <select id="product-select"></select>
+          </label>
+        </div>
+        <button id="compare-button">Compare</button>
+        <div id="comparison-result"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Nutrition Consulting App - Demo project</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
